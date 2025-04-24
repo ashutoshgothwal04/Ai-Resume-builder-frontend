@@ -5,6 +5,10 @@ import './index.css'
 import { ThemeProvider } from './context/ThemeContext'
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import "./index.css";
+import App from "./App.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./Home/Home.jsx";
 import Dashboard from "./Dashboard/Dashboard.jsx";
@@ -52,3 +56,10 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     </ThemeProvider>
   </React.StrictMode>,
 )
+createRoot(document.getElementById("root")).render(
+  <StrictMode>
+    <ClerkProvider publishableKey={PUBLISHABLE_KEY}>
+      <RouterProvider router={router}></RouterProvider>
+    </ClerkProvider>
+  </StrictMode>
+);
