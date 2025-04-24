@@ -32,11 +32,8 @@ A modern, AI-powered resume builder that helps you create professional resumes w
 
 1. Clone the repository:
 ```bash
-<<<<<<< HEAD
 git clone https://github.com/yourusername/ai-resume-builder.git
-=======
 git clone https://github.com/ashutoshgothwal04/Ai-Resume-builder-frontend.git
->>>>>>> 8728cf9e41ae22c4982c5e764d2d523788baf1d0
 ```
 
 
